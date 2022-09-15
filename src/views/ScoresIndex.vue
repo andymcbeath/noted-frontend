@@ -33,7 +33,14 @@ export default {
   <div class="scores-index">
     <h1>All Scores</h1>
     Search:
-    <input v-model="titleFilter" list="titles" type="text" />
+    <input
+      class="form-control form-control-md"
+      type="text"
+      placeholder="What score do you want to find?"
+      aria-label=".form-control-md"
+      v-model="titleFilter"
+      list="titles"
+    />
     <TransitionGroup name="list">
       <datalist id="titles">
         <option v-for="score in scores" v-bind:key="score.id">
@@ -68,9 +75,14 @@ export default {
 
 <style>
 .scores-index {
-  font-size: large;
+  font-size: x-large;
   font-style: normal;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 50%;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  padding: 20px;
 }
 #embed-container {
   width: 100%;

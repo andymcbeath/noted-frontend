@@ -139,16 +139,6 @@ export default {
           v-model="editScoreParams.composer"
         />
       </div>
-      <!-- <div class="scoreId">
-        <label>Flat Score ID #:</label>
-        <input
-          class="form-control form-control-sm"
-          type="text"
-          placeholder="Update the ID #"
-          aria-label=".form-control-sm"
-          v-model="editScoreParams.score"
-        /> -->
-      <!-- </div> -->
       <button
         class="btn btn-outline-primary"
         style="

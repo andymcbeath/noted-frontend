@@ -85,16 +85,6 @@ export default {
       </div>
     </div>
   </nav>
-
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/signup">Signup</router-link> |
-    <router-link to="/login">Login</router-link> |
-    <router-link to="/logout">Logout</router-link> |
-    <router-link to="/scores">All Scores</router-link> |
-    <router-link to="/scores/new">New Score</router-link>
-  </nav>
-  <router-view /> -->
   <router-view />
 </template>
 <div v-if="flashMessage" class="alert alert-info">
@@ -116,13 +106,6 @@ export default {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0a69c2;
 }
-/* body {
-  /* background-image: url(./assets/noteImage.png);
-  background-size: 45%;
-  height: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 100px; */
 
 #app {
   font-family: Helvetica, Arial, sans-serif;

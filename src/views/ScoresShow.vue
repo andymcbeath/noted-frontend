@@ -48,7 +48,6 @@ export default {
   <div class="scores-show">
     <h2>{{ score.title }}</h2>
     <p>Composer: {{ score.composer }}</p>
-    <!-- <p>Score's Flat ID: {{ score.score }}</p> -->
     <router-link v-bind:to="`/scores/${score.id}/edit`"
       ><button
         class="btn btn-outline-primary"
@@ -74,9 +73,6 @@ export default {
     >
       Destroy Score
     </button>
-    <!-- <button v-on:click="submit" href="/ScoresEdit.vue"></button>
-    class="btn btn-outline-primary" style=" --bs-btn-padding-y: 0.25rem;
-    --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 1rem; " -->
     <router-link to="/scores"
       ><button
         class="btn btn-outline-primary"
