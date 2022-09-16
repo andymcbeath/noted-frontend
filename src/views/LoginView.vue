@@ -41,7 +41,7 @@ export default {
         <input
           class="form-control form-control-sm"
           type="email"
-          placeholder="Example@example.com"
+          placeholder="To try this out use test@example.com"
           aria-label=".form-control-sm"
           v-model="newSessionParams.email"
         />
@@ -51,7 +51,7 @@ export default {
         <input
           class="form-control form-control-sm"
           type="password"
-          placeholder="Type in your incredibly unique password"
+          placeholder="The test password is password. Don't tell anybody!"
           aria-label=".form-control-sm"
           v-model="newSessionParams.password"
         />
