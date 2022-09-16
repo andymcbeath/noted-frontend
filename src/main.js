@@ -6,7 +6,9 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 axios.defaults.baseURL =
-  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://noted7.heorkuapp.com";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
