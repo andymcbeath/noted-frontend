@@ -13,8 +13,7 @@ export default {
       axios
         .post("/sessions", this.newSessionParams)
         .then((response) => {
-          axios.defaults.headers.common["Authorization"] =
-            "Bearer " + response.data.jwt;
+          axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           this.$router.push("/");
         })
@@ -58,12 +57,7 @@ export default {
       </div>
       <button
         class="btn btn-outline-primary"
-        style="
-          --bs-btn-padding-y: 0.25rem;
-          --bs-btn-padding-x: 0.5rem;
-          --bs-btn-font-size: 1.33rem;
-          margin-top: 20px;
-        "
+        style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 1.33rem; margin-top: 20px"
         type="submit"
         value="Submit"
       >

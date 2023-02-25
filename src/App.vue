@@ -24,13 +24,7 @@ export default {
   <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img
-          src="./assets/noteImage.png"
-          alt=""
-          width="30"
-          height="30"
-          class="d-inline-block align-text-top"
-        />
+        <img src="./assets/noteImage.png" alt="" width="30" height="30" class="d-inline-block align-text-top" />
         Noted
       </a>
       <button
@@ -50,36 +44,16 @@ export default {
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a
-              v-if="!isLoggedIn"
-              class="nav-link active"
-              aria-current="page"
-              href="/signup"
-              >Sign Up</a
-            >
+            <a v-if="!isLoggedIn" class="nav-link active" aria-current="page" href="/signup">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a v-if="isLoggedIn" class="nav-link active" href="/scores"
-              >All Scores</a
-            >
+            <a v-if="isLoggedIn" class="nav-link active" href="/scores">All Scores</a>
           </li>
           <li class="nav-item">
-            <a
-              v-if="!isLoggedIn"
-              class="nav-link active"
-              aria-current="page"
-              href="/login"
-              >Log In</a
-            >
+            <a v-if="!isLoggedIn" class="nav-link active" aria-current="page" href="/login">Log In</a>
           </li>
           <li class="nav-item">
-            <a
-              v-if="isLoggedIn"
-              class="nav-link active"
-              aria-current="page"
-              href="/logout"
-              >Log Out</a
-            >
+            <a v-if="isLoggedIn" class="nav-link active" aria-current="page" href="/logout">Log Out</a>
           </li>
         </ul>
       </div>
